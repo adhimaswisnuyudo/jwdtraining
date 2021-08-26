@@ -3,10 +3,22 @@
 class Account extends CI_Controller{
     
     function login(){
-        echo "Halaman Login";
+        $this->load->view('accounts/login');
     }
 
-    function tampildata($data=NULL){
-        echo $data;
+    function dologin(){
+        $username = $this->input->post('username');
+        $password = $this->input->post('password');
+        $checklogin = $this->Maccount->dologin($username,$password);
     }
+
+    function logout(){
+        $this->session->sess_destroy();
+        redirect(base_url());
+    }
+
+    function test(){
+        echo passwordgenerator("123");
+    }
+    
 }

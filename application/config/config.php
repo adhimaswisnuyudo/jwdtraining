@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 $protocol = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS']=='on')?'https':'http';
-$ip = $_SERVER['SERVER_ADDR'];
+$ip = 'localhost';//'192.168.95.22';//$_SERVER['SERVER_ADDR'];
 $baseurl = $protocol."://".$ip."/training/";
 
 $config['base_url'] = $baseurl;
