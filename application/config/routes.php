@@ -10,6 +10,12 @@ $route['logout'] = 'account/logout';
 
 // route untuk admin
 $route['adm'] = 'Admin/index';
+$route['members'] = 'Admin/members';
 
 // route untuk user
 $route['usr'] = 'User/index';
+
+
+// route untuk action 
+$route['addorupdatemember'] = 'Operations/addorupdatemember';
+$route['deletemember'] = 'Operations/deletemember';

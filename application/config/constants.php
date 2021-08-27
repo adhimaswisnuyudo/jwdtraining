@@ -86,3 +86,4 @@ defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest auto
 
 define('HEADERLAYOUT','./application/views/layouts/header.php');
 define('FOOTERLAYOUT','./application/views/layouts/footer.php');
+define('APPNAME','Training');

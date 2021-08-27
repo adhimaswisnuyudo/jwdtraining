@@ -14,4 +14,11 @@ class Admin extends CI_Controller{
         $this->load->view('admin/index',$data);
     }
 
+    function members(){
+        $data['title'] = "Members";
+        $data['subtitle'] = "Menampilkan semua data member";
+        $data['members'] = $this->Getdata->getallmembers()->result();
+        $this->load->view('admin/members',$data);
+    }
+
 }

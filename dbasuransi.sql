@@ -11,7 +11,7 @@
  Target Server Version : 100420
  File Encoding         : 65001
 
- Date: 26/08/2021 08:13:24
+ Date: 27/08/2021 13:24:23
 */
 
 SET NAMES utf8mb4;
@@ -28,11 +28,13 @@ CREATE TABLE `members`  (
   `address` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL DEFAULT NULL,
   `phone` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL DEFAULT NULL,
   PRIMARY KEY (`memberid`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 4 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of members
 -- ----------------------------
+INSERT INTO `members` VALUES (2, 'Tanjung Mirza Savana', '002', 'Jalan Cigugur Cimahi', '085220304568');
+INSERT INTO `members` VALUES (3, 'Dina Marsha', '324549684512155', 'Lembang - Kabupaten Bandung Barat', '08579826526595');
 
 -- ----------------------------
 -- Table structure for packages
@@ -82,10 +84,12 @@ CREATE TABLE `users`  (
   `fullname` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL DEFAULT NULL,
   `level` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL DEFAULT NULL,
   PRIMARY KEY (`userid`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of users
 -- ----------------------------
+INSERT INTO `users` VALUES (1, 'adhimas', '$2y$10$6q.Kt/n/9JKKsDzJ/UTcCekYKicWpTQPSLJ1KSQJYBaqGaNhEw6Vm', 'Adhimas Wisnuyudo', 'Admin');
+INSERT INTO `users` VALUES (2, 'asep', '$2y$10$cjhibj2p5vND5Grrx3B/KeEvsHrgBpwTzfvr6l/sne3BrFSlKlc46', 'Asep Subagdja', 'User');
 
 SET FOREIGN_KEY_CHECKS = 1;

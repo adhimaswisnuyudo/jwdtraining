@@ -285,6 +285,7 @@
 
                 <!-- Login Form -->
                 <form id="formlogin">
+                    <input type="hidden" name="<?=$this->security->get_csrf_token_name();?>" value="<?=$this->security->get_csrf_hash();?>">
                     <input type="text" id="username" class="fadeIn second" name="username" placeholder="Username">
                     <input type="text" id="password" class="fadeIn third" name="password" placeholder="Password">
                     <input type="submit" class="fadeIn fourth" value="Log In">

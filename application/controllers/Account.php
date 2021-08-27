@@ -7,9 +7,11 @@ class Account extends CI_Controller{
     }
 
     function dologin(){
-        $username = $this->input->post('username');
-        $password = $this->input->post('password');
-        $checklogin = $this->Maccount->dologin($username,$password);
+        if(ispost()){
+            $username = $this->input->post('username');
+            $password = $this->input->post('password');
+            $checklogin = $this->Maccount->dologin($username,$password);
+        }
     }
 
     function logout(){

@@ -32,3 +32,13 @@ function redirectresponse($targeturl){
 function passwordgenerator($password){
     return password_hash($password,PASSWORD_BCRYPT);      
 }
+
+function ispost(){
+    $method = $_SERVER['REQUEST_METHOD'];
+    if($method=="POST"){
+        return true;
+    }
+    else{
+        jsonoutput(405,array('status'=>'failed','message'=>'method tidak diperkenankan'));
+    }
+}
