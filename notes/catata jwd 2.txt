@@ -1,0 +1,8 @@
+embed asset javascript / css
+1. CDN (content delivery network)
+asset disimpan di cdn servernya
+hanya kita akses secara online
+
+2. Local assets
+di download dulu, kemudian dipanggil
+secara local

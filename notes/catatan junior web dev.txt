@@ -1,0 +1,134 @@
+UI :
+project manager:
+
+system analyst:
+ - business analyst (konsultan pajak, konsultan hr, keuangan dll)
+
+implementor :
+ - front end programmer
+	-UI Designer => mengumpulkan kebutuhan user, menilai user experience
+	goals : blueprint, wireframe, diagram UI
+	logo utama = 50px x 30px
+	-UI Engineer => mengubah wireframe menjadi Source Code, compile dll
+
+ - back end programmer
+	- data engineer
+	- programmer
+
+- Tester
+ - Penetration Testing
+ - UI Testing
+ - Bug Hunter
+ - application testing (black box => fungsionalitas , white box)
+
+ 
+Koalisi Blue Team :
+Sistem analis, programmer
+
+Koalisi Red Team :
+Tester, Bug Hunter
+
+SPORTIF
+
+3 BIDANG UTAMA :
+APTIKA (pengembang aplikasi) => BLUE TEAM
+TIK (pengelola Layanan, server dll) => BLUE TEAM
+KIPER (keamanan informasi dan Persandian) => RED TEAM
+
+Bagaimana menyimpan dan mengelola source code dengan baik?
+
+asset dalam aplikasi :
+- source code
+- data
+- kredensial / hak akses
+- file image, dll...
+- konfigurasi
+
+Cara kerja github secara dasar :
+1st Programmer :
+- inisialisasi projek <aplikasiX>
+- bangun repository
+- invite collaborator
+- team work
+- commit, push
+- Push ke Branch Main
+
+pull ke dev. Server (OLEH TESTER)
+dilakukan pengujian di development server menggunakan Branch Main
+jika sudah tidak ada masalah, baru tarik 
+branch main ke master, dimana branch master akan di pull dari production server
+git memiliki Branch.
+Branch Main & Branch Master
+
+--------------------------------------
+
+Kebutuhan tools untuk seorang web developer :
+1. Text editor (VSC, NPP, Notepad,nano, sublime)
+2. Development Server :
+	- Webserver (IIS, Apache, Tomcat, NginX, NodeJS, ChromeServer, LiteServer)
+	- Database Server (MySQL, MS.SQL Server, PostgreSQL, OracleDB,db2,)
+	- FTP Server (FileZilla Server)
+	- Compiler(PHP, ASP, JSP,dll..) => mengubah perintah menjadi binary code
+
+ATAU
+3. Package Server
+	- XAMPP (X-> windows, Apache, MySQL, Perl)
+	- LAMPP / WAMMP
+
+4. Database Client
+	- PhpMyadmin
+	- Navicat
+	- SSMS
+	- TablePlus...
+	- HeidySql
+
+5. Framework Backend
+	- Laravel
+	- CodeIgniter
+	- YII
+	- Symphony
+	- Cake
+
+6. Framework Frontend
+	- Bootstrap
+	- MaterialUI
+	- Jquery
+	- ReactJS
+	- VueJS
+
+Yang terbaru bukanlah yang terbaik
+
+-------------------------------------------
+Case Scenario :
+Buat aplikasi untuk pendaftaran Premi Asuransi.
+dimana didalamnya ada akses :
+- Admin :
+	- Lihat Dashboard
+	- Kelola master premi
+	- Kelola data sppa (surat pengajuan permohonan asuransi)
+	- buat laporan
+- Member : 
+	- Lihat daftar premi
+	- mendaftarkan diri untuk SPPA
+
+Code First, Database First, UI First
+---------------------------------------
+usahakan konsisten
+orderCode
+memberCode
+categoryCode
+orderId
+memberId
+
+Penulisan variable / field :
+Cammel Case : memberAddress, orderId, lastUpdatedby
+Snake Case : id_member, member_name, order_date
+ALLCAPS : NAMAMEMBER, TGLLAHIR, ORDERID
+Dash	: id-member, order-date, member-name
+Basic : membername, memberid, orderid
+
+---------------------------------------
+Konsep penulisan URI di CI 3
+https://inixindo.id/index.php/welcome/index/parameter_jikaada
+____________________________ ________ _____ _________________
+0				1	2		3
